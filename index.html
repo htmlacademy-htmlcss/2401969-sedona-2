@@ -33,7 +33,7 @@
             <a class="user-nav__link" href="#"><span class="visually-hidden">Понравилось</span></a>
           </li>
           <li class="user-nav__item">
-            <a class="user-nav__link" href="#">Хочу сюда!</a>
+            <a class="user-nav__link button button--brown" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -98,10 +98,44 @@
         <h2 class="visually-hidden">Бронирование отеля</h2>
         <p class="hotel-seach__title">Заинтересовались?</p>
         <p class="hotel-seach__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="hotel-seach__button button" type="button">Поиск гостиницы в Седоне</button>
+        <a class="hotel-seach__link button button--brown" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Форма подписки на рассылку</h2>
+        <p class="subscribe__title">Подпишитесь на рассылку</p>
+        <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe__form">
+          <label class="visually-hidden" for="subscribe-email">E-mail</label>
+          <input class="subscribe__input" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
+          <button class="subscribe__button button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
-    <footer class="page-footer wrapper"></footer>
+    <footer class="page-footer wrapper">
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="social__link">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <address class="page-footer__adress">
+        <a class="page-footer__phone" href="88128121212">+7 (812) 812-12-12</a>
+      </address>
+      <a class="page-footer__copyright">
+        <img class="page-footer__img" src="images/logo_htmlacademy.svg">
+      </a>
+    </footer>
   </body>
 
 </html>
