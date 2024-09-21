@@ -22,7 +22,7 @@
             <a class="site-nav__link" href="#">О седоне</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Гостиницы</a>
+            <a class="site-nav__link" href="booking.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
@@ -38,10 +38,11 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-index wrapper">
       <h1 class="visually-hidden">Сайт курорта Седона</h1>
       <section class="invite">
-        <h2 class="visually-hidden">Приглашение в Седону</h2>
+        <h2 class="visually-hidden">Приглашение в Седону</h1>
         <p class="visually-hidden">Добро пожаловать в Седону, потому что Гранд-Каньон отстой</p>
         <img class="invite__img" src="images/index-background.jpg">
       </section>
@@ -100,17 +101,18 @@
         <p class="hotel-seach__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-seach__link button button--brown" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe subscribe--bg">
         <h2 class="visually-hidden">Форма подписки на рассылку</h2>
         <p class="subscribe__title">Подпишитесь на рассылку</p>
         <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">E-mail</label>
-          <input class="subscribe__input" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post" id="subscribe-form">
+          <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
+          <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email" placeholder="Ваш e-mail" required>
           <button class="subscribe__button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
+
     <footer class="page-footer wrapper">
       <ul class="page-footer__list social">
         <li class="social__item">
@@ -130,10 +132,10 @@
         </li>
       </ul>
       <address class="page-footer__adress">
-        <a class="page-footer__phone" href="88128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="page-footer__copyright">
-        <img class="page-footer__img" src="images/logo_htmlacademy.svg">
+        <span class="visually-hidden">Логотип HTML Academy</span>
       </a>
     </footer>
   </body>
