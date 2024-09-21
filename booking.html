@@ -114,7 +114,7 @@
                 <input class="range__input" type="number" value="0" name="min-price">
               </label>
               <label class="range__label"></label>
-                <input class="range__input" type="number" value="9000" name="max-price">
+              <input class="range__input" type="number" value="9000" name="max-price">
               </label>
             </div>
             <div class="range__scale">
@@ -132,13 +132,113 @@
       </section>
     </div>
     <section class="main-catalog__products products">
-      <header class="products__header sorting"></header>
+      <h2 class="visually-hidden">Список подходящих гостиниц</h2>
+      <header class="products__header seach-sorting">
+        <p class="seach-sorting__quantity">Найдено гостиниц: 38</p>
+        <form class="seach-sorting__form" action="https://echo.htmlacademy.ru/" method="post" id="seach-sorting-form">
+          <div class="seach-sorting__select select">
+            <label class="visually-hidden" for="seach-sorting">Сортировка результатов поиска</label>
+            <select class="select__control" name="sorting" id="seach-sorting">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
+          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+        </form>
+      </header>
       <ul class="products__list">
-        <li class="products__item card"></li>
+        <li class="products__item card">
+          <a class="card__link">
+            <img class="card__img" src="images/hotel-1.jpg">
+            <h3 class="card__title">Amara Resort & Spa</h3>
+          </a>
+          <div class="card__description">
+            <span class="card__product">Гостиница</span>
+            <span class="card__price">От 4000 ₽</span>
+          </div>
+          <div class="card__buttons">
+            <a class="card__button button button--brown" href="#">Подробнее</a>
+            <button class="card__button button" type="button">В избранное</button>
+          </div>
+          <div class="card__metrics">
+            <span class="card__stars">****</span>
+            <span class="card__rating">Рейтинг: 8,5</span>
+          </div>
+        </li>
+        <li class="products__item card">
+          <a class="card__link">
+            <img class="card__img" src="images/hotel-2.jpg">
+            <h3 class="card__title">Villas at Poco Diablo</h3>
+          </a>
+          <div class="card__description">
+            <span class="card__product">Гостиница</span>
+            <span class="card__price">От 5000 ₽</span>
+          </div>
+          <div class="card__buttons">
+            <a class="card__button button button--brown" href="#">Подробнее</a>
+            <button class="card__button button button--green" type="button">В избранном</button>
+          </div>
+          <div class="card__metrics">
+            <span class="card__stars">****</span>
+            <span class="card__rating">Рейтинг: 9,2</span>
+          </div>
+        </li>
+        <li class="products__item card">
+          <a class="card__link">
+            <img class="card__img" src="images/hotel-3.jpg">
+            <h3 class="card__title">Desert Quail Inn</h3>
+          </a>
+          <div class="card__description">
+            <span class="card__product">Гостиница</span>
+            <span class="card__price">От 2500 ₽</span>
+          </div>
+          <div class="card__buttons">
+            <a class="card__button button button--brown" href="#">Подробнее</a>
+            <button class="card__button button" type="button">В избранное</button>
+          </div>
+          <div class="card__metrics">
+            <span class="card__stars">***</span>
+            <span class="card__rating">Рейтинг: 6,9</span>
+          </div>
+        </li>
+        <li class="products__item card">
+          <a class="card__link">
+            <img class="card__img" src="images/hotel-4.jpg">
+            <h3 class="card__title">GreenTree Inn</h3>
+          </a>
+          <div class="card__description">
+            <span class="card__product">Гостиница</span>
+            <span class="card__price">От 1500 ₽</span>
+          </div>
+          <div class="card__buttons">
+            <a class="card__button button button--brown" href="#">Подробнее</a>
+            <button class="card__button button" type="button">В избранное</button>
+          </div>
+          <div class="card__metrics">
+            <span class="card__stars">**</span>
+            <span class="card__rating">Рейтинг: 5,0</span>
+          </div>
+        </li>
       </ul>
       <ul class="products__pagination pagination">
         <li class="pagination__item">
-          <a class="pagination__link" href="#">1</a>
+          <a class="pagination__link pagination__link--current" href="#">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--current" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--current" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--current" href="#">4</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--current" href="#">...</a>
+        </li>
+        <li class="pagination__item"></li>
+        <a class="pagination__link pagination__link--current" href="#">10</a>
         </li>
       </ul>
     </section>
@@ -148,7 +248,8 @@
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post" id="subscribe-form">
         <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
-        <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email" placeholder="Ваш e-mail" required>
+        <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email"
+          placeholder="Ваш e-mail" required>
         <button class="subscribe__button button" type="submit">Подписаться</button>
       </form>
     </section>
