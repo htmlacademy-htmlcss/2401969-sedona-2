@@ -25,6 +25,7 @@
 }
 
 body {
+  min-inline-size: 1280px;
   min-block-size: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
