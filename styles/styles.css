@@ -79,6 +79,16 @@ img {
   background-color: #82b3d3;
 }
 
+.button--select {
+  background-color: #7db54f;
+}
+
+.input {
+  padding: 12px 20px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
 .first-title {
   font-size: 60px;
   line-height: 78px;
@@ -375,8 +385,6 @@ img {
 
 .subscribe__input {
   flex-grow: 1;
-  padding: 12px 20px;
-  border: none;
   border-radius: 4px 0 0 4px;
 }
 
