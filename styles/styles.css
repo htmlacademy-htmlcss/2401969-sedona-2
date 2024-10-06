@@ -24,11 +24,13 @@
   box-sizing: border-box;
 }
 
+.page {
+  block-size: 100%;
+}
+
 body {
   min-inline-size: 1280px;
-  min-block-size: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  block-size: 100%;
   margin: 0;
   background-color: #f2f2f2;
   color: #333333;
@@ -98,7 +100,10 @@ img {
 }
 
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   inline-size: 1200px;
+  min-block-size: 100%;
   margin-inline: auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 #00000033;
