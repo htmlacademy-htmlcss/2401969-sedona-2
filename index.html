@@ -21,7 +21,7 @@
               <a class="site-nav__link site-nav__link--current" href="#">Главная</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">О седоне</a>
+              <a class="site-nav__link" href="#">О Седоне</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="catalog.html">Гостиницы</a>
@@ -29,16 +29,16 @@
           </ul>
           <ul class="main-nav__list user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__link" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link" href="#">
+              <a class="user-nav__link user-nav__link--like" href="#">
                 <span class="visually-hidden">Понравилось</span>
                 <span class="user-nav__likes-badge">12</span>
               </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link button button--basic" href="catalog.html">Хочу сюда!</a>
+              <a class="user-nav__button button button--basic" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -48,16 +48,18 @@
         <section class="invite">
           <h1 class="visually-hidden">Приглашение в Седону</h1>
           <img class="invite__img" src="images/welcome.svg" width="458" height="352"
-            alt="Welcome to the gorgeous Sedona, becoouse the Grand Canyon sucks">
+            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="advantages__slogan second-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
+          <div class="advantages__intro intro">
+            <p class="intro__slogan second-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
+          </div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__description">
-                <h3 class="advantages__title third-title">Настоящий городок</h3>
+                <p class="advantages__title third-title">Настоящий городок </p>
                 <p class="advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages__img" src="images/advantage-photo-1.jpg" width="800" height="385"
@@ -65,25 +67,25 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__description">
-                <h3 class="advantages__title third-title">Небольшая площадь</h3>
+                <p class="advantages__title third-title">Небольшая площадь</p>
                 <p class="advantages__text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description">
-                <h3 class="advantages__title third-title">Красивая дорога</h3>
+                <p class="advantages__title third-title">Красивая дорога</p>
                 <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description">
-                <h3 class="advantages__title third-title">Мало туристов</h3>
+                <p class="advantages__title third-title">Мало туристов</p>
                 <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--reverse">
               <div class="advantages__description">
-                <h3 class="advantages__title third-title">Там есть мост дьявола</h3>
+                <p class="advantages__title third-title">Там есть мост дьявола</p>
                 <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется!</p>
               </div>
               <img class="advantages__img" src="images/advantage-photo-2.jpg" width="800" height="385"
@@ -93,40 +95,45 @@
         </section>
         <section class="services">
           <h2 class="visually-hidden">Сервисы в Седоне</h2>
-          <p class="services__slogan second-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="services__intro">Опытный персонал и качественное обслуживание!</p>
+          <div class="services__intro intro">
+            <p class="intro__slogan second-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
+            <p class="intro__text">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="services__list">
             <li class="services__item services__item--home">
-              <h3 class="services__title third-title">Жильё</h3>
+              <p class="services__title third-title">Жильё</p>
               <p class="services__description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services__item services__item--eat">
-              <h3 class="services__title third-title">Еда</h3>
+              <p class="services__title third-title">Еда</p>
               <p class="services__description">Всегда заказывайте<br> топовый фирменый бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services__item services__item--gift">
-              <h3 class="services__title third-title">Сувениры</h3>
+              <p class="services__title third-title">Сувениры</p>
               <p class="services__description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="search">
           <h2 class="visually-hidden">Бронирование отеля</h2>
-          <p class="search__title second-title">Заинтересовались?</p>
-          <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
-            в
-            Седоне</p>
-          <a class="search__link button button--basic" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <div class="search__intro intro">
+            <p class="intro__slogan second-title">Заинтересовались?</p>
+            <p class="intro__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+              в Седоне</p>
+          </div>
+          <a class="search__button button button--basic button--big" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe subscribe--bg">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-          <p class="subscribe__title second-title">Подпишитесь на рассылку</p>
-          <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <div class="subscribe__intro intro">
+            <p class="intro__slogan second-title">Подпишитесь на рассылку</p>
+            <p class="intro__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          </div>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post" id="subscribe-form">
             <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
             <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email"
               placeholder="Ваш e-mail" required>
-            <button class="subscribe__button button button--second" type="submit">Подписаться</button>
+            <button class="subscribe__button button button--second button--big" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -134,17 +141,17 @@
       <footer class="page-footer">
         <ul class="page-footer__list socials">
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--vk" href="#">
               <span class="visually-hidden">Мы в ВКонтакте</span>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--tg" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--yt" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>

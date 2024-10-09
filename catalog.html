@@ -28,16 +28,16 @@
           </ul>
           <ul class="main-nav__list user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__link" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link" href="#">
+              <a class="user-nav__link user-nav__link--like" href="#">
                 <span class="visually-hidden">Понравилось</span>
                 <span class="user-nav__likes-badge">12</span>
               </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link button button--basic" href="#">Хочу сюда!</a>
+              <a class="user-nav__button button button--basic" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -135,22 +135,22 @@
             <h2 class="sorting__title second-title">Найдено гостиниц:
               <span class="sorting__number">38</span>
             </h2>
-            <label class="sorting__label" for="search-sorting">
+
               <select class="sorting__select" name="sorting" id="search-sorting"
                 aria-label="Сортировка результатов поиска">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-            </label>
+
             <div class="sorting__view">
-              <a class="sorting__toggle sorting__toggle--current" href="#">
+              <a class="sorting__toggle sorting__toggle--table sorting__toggle--current" href="#">
                 <span class="visually-hidden">Таблица</span>
               </a>
-              <a class="sorting__toggle" href="#">
+              <a class="sorting__toggle sorting__toggle--gallery" href="#">
                 <span class="visually-hidden">Галерея</span>
               </a>
-              <a class="sorting__toggle" href="#">
+              <a class="sorting__toggle sorting__toggle--list" href="#">
                 <span class="visually-hidden">Список</span>
               </a>
             </div>
@@ -159,74 +159,50 @@
             <li class="products__item card">
               <a class="card__link" href="#">
                 <img class="card__img" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="">
-                <p class="card__title">Amara Resort & Spa</p>
+                <p class="card__title third-title">Amara Resort & Spa</p>
               </a>
-              <div class="card__description">
                 <span class="card__type">Гостиница</span>
                 <span class="card__price">От 4000 ₽</span>
-              </div>
-              <div class="card__buttons">
                 <a class="card__button button button--basic" href="#">Подробнее</a>
                 <button class="card__button button button--second" type="button">В избранное</button>
-              </div>
-              <div class="card__metrics">
                 <span class="card__stars">****</span>
                 <span class="card__rating">Рейтинг: 8,5</span>
-              </div>
             </li>
             <li class="products__item card">
               <a class="card__link" href="#">
                 <img class="card__img" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="">
-                <p class="card__title">Villas at Poco Diablo</p>
+                <p class="card__title third-title">Villas at Poco Diablo</p>
               </a>
-              <div class="card__description">
                 <span class="card__type">Гостиница</span>
                 <span class="card__price">От 5000 ₽</span>
-              </div>
-              <div class="card__buttons">
                 <a class="card__button button button--basic" href="#">Подробнее</a>
                 <button class="card__button button button--select" type="button">В избранном</button>
-              </div>
-              <div class="card__metrics">
                 <span class="card__stars">****</span>
                 <span class="card__rating">Рейтинг: 9,2</span>
-              </div>
             </li>
             <li class="products__item card">
               <a class="card__link" href="#">
                 <img class="card__img" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="">
-                <p class="card__title">Desert Quail Inn</p>
+                <p class="card__title third-title">Desert Quail Inn</p>
               </a>
-              <div class="card__description">
                 <span class="card__type">Гостиница</span>
                 <span class="card__price">От 2500 ₽</span>
-              </div>
-              <div class="card__buttons">
                 <a class="card__button button button--basic" href="#">Подробнее</a>
                 <button class="card__button button button--second" type="button">В избранное</button>
-              </div>
-              <div class="card__metrics">
                 <span class="card__stars">***</span>
                 <span class="card__rating">Рейтинг: 6,9</span>
-              </div>
             </li>
             <li class="products__item card">
               <a class="card__link" href="#">
                 <img class="card__img" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="">
-                <p class="card__title">GreenTree Inn</p>
+                <p class="card__title third-title">GreenTree Inn</p>
               </a>
-              <div class="card__description">
                 <span class="card__type">Гостиница</span>
                 <span class="card__price">От 1500 ₽</span>
-              </div>
-              <div class="card__buttons">
                 <a class="card__button button button--basic" href="#">Подробнее</a>
                 <button class="card__button button button--second" type="button">В избранное</button>
-              </div>
-              <div class="card__metrics">
                 <span class="card__stars">**</span>
                 <span class="card__rating">Рейтинг: 5,0</span>
-              </div>
             </li>
           </ul>
           <ul class="catalog__pagination pagination">
@@ -259,7 +235,7 @@
             <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
             <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email"
               placeholder="Ваш e-mail" required>
-            <button class="subscribe__button button button--second" type="submit">Подписаться</button>
+            <button class="subscribe__button button button--second button--big" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -267,17 +243,17 @@
       <footer class="page-footer">
         <ul class="page-footer__list socials">
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--vk" href="#">
               <span class="visually-hidden">Мы в ВКонтакте</span>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--tg" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link socials__link--yt" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
