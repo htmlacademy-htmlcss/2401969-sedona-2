@@ -12,36 +12,39 @@
     <div class="page-body">
 
       <header class="page-header">
-        <nav class="page-header__nav main-nav">
-          <a class="main-nav__logo" href="#">
-            <img class="main-nav__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип курорта Седона">
-          </a>
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="#">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">О Седоне</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-nav">
-            <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--like" href="#">
-                <span class="visually-hidden">Понравилось</span>
-                <span class="user-nav__likes-badge">12</span>
-              </a>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-nav__button button button--basic" href="catalog.html">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="wrapper">
+          <nav class="page-header__nav main-nav">
+            <a class="main-nav__logo" href="index.html" aria-current="page">
+              <img class="main-nav__logo-img" src="images/logo.svg" width="140" height="70"
+                alt="Логотип курорта Седона">
+            </a>
+            <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current" href="index.html" aria-current="page">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">О Седоне</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--like" href="#">
+                  <span class="visually-hidden">Понравилось</span>
+                  <span class="user-nav__likes-badge">12</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__button button button--basic" href="catalog.html">Хочу сюда!</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main>
@@ -53,7 +56,7 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <div class="advantages__intro intro">
-            <p class="intro__slogan second-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <p class="intro__slogan second-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
           </div>
           <ul class="advantages__list">
@@ -125,43 +128,47 @@
         </section>
         <section class="subscribe subscribe--bg">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-          <div class="subscribe__intro intro">
-            <p class="intro__slogan second-title">Подпишитесь на рассылку</p>
-            <p class="intro__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <div class="subscribe__wrapper">
+            <div class="subscribe__intro intro">
+              <p class="intro__slogan second-title">Подпишитесь на рассылку</p>
+              <p class="intro__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post" id="subscribe-form">
+              <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
+              <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email"
+                placeholder="Ваш e-mail" required>
+              <button class="subscribe__button button button--second button--big" type="submit">Подписаться</button>
+            </form>
           </div>
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post" id="subscribe-form">
-            <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
-            <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-form-email"
-              placeholder="Ваш e-mail" required>
-            <button class="subscribe__button button button--second button--big" type="submit">Подписаться</button>
-          </form>
         </section>
       </main>
 
       <footer class="page-footer">
-        <ul class="page-footer__list socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="#">
-              <span class="visually-hidden">Мы в ВКонтакте</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--tg" href="#">
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--yt" href="#">
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
-          </li>
-        </ul>
-        <address class="page-footer__address">
-          <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <a class="page-footer__copyright" href="#">
-          <span class="visually-hidden">Логотип HTML Academy</span>
-        </a>
+        <div class="page-footer__wrapper wrapper">
+          <ul class="page-footer__list socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--tg" href="#">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--yt" href="#">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+          <address class="page-footer__address address">
+            <a class="address__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <a class="page-footer__copyright" href="#">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+          </a>
+        </div>
       </footer>
 
     </div>
