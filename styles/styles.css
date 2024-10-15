@@ -739,11 +739,55 @@ img {
 }
 
 .range__inputs {
+  inline-size: 288px;
   display: flex;
+  justify-content: space-between;
+  margin-block-end: 44px;
 }
 
 .range__input {
   inline-size: 143px;
+}
+
+.range__input--min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range__input--max {
+  border-radius: 0 4px 4px 0;
+}
+
+.range__scale {
+  position: relative;
+  inline-size: 288px;
+  block-size: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range__bar {
+  position: absolute;
+  block-size: 4px;
+  background-color: #ffffff;
+}
+
+.range__toggle {
+  position: absolute;
+  inline-size: 20px;
+  block-size: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.range__toggle--min {
+  top: -8px;
+  left: 0;
+}
+
+.range__toggle--max {
+  top: -8px;
+  right: 0;
 }
 
 
@@ -886,6 +930,27 @@ img {
 
 .card__price {
   text-align: end;
+}
+
+.card__stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__star {
+  inline-size: 18px;
+  block-size: 17px;
+  margin-block: 0;
+  background-image: url("../icons/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 17px;
+}
+
+.card__star--four {
+  inline-size: 96px;
+  background-repeat: space;
 }
 
 .card__rating {
