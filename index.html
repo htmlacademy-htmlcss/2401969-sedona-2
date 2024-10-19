@@ -11,7 +11,7 @@
   <body>
     <div class="page-body">
 
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <div class="wrapper">
           <nav class="page-header__nav main-nav">
             <a class="main-nav__logo" href="index.html" aria-current="page">
@@ -47,13 +47,13 @@
         </div>
       </header>
 
-      <main>
-        <section class="invite">
+      <main data-test="main">
+        <section class="invite" data-test="hero">
           <h1 class="visually-hidden">Приглашение в Седону</h1>
           <img class="invite__img" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <div class="advantages__intro intro">
             <p class="intro__slogan second-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -117,7 +117,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="visually-hidden">Бронирование отеля</h2>
           <div class="search__intro intro">
             <p class="intro__slogan second-title">Заинтересовались?</p>
@@ -126,7 +126,7 @@
           </div>
           <a class="search__button button button--basic button--big" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscribe subscribe--bg">
+        <section class="subscribe subscribe--bg" data-test="subscribe">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
           <div class="subscribe__wrapper">
             <div class="subscribe__intro intro">
@@ -143,7 +143,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer__wrapper wrapper">
           <ul class="page-footer__list socials">
             <li class="socials__item">

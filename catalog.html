@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-body">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <div class="wrapper">
           <nav class="page-header__nav main-nav">
             <a class="main-nav__logo" href="index.html">
@@ -46,7 +46,7 @@
         </div>
       </header>
 
-      <main>
+      <main data-test="main">
         <section class="catalog-header">
           <div class="wrapper">
             <h1 class="catalog-header__title first-title">Гостиницы Седоны</h1>
@@ -59,7 +59,7 @@
               </li>
             </ol>
             <form class="catalog-header__form filter" action="https://echo.htmlacademy.ru/" method="get"
-              id="filter-form">
+              id="filter-form" data-test="filter">
               <fieldset class="filter__group">
                 <legend class="filter__title">Инфраструктура:</legend>
                 <ul class="filter__list">
@@ -156,7 +156,7 @@
                 </a>
               </div>
             </header>
-            <ul class="catalog__products products">
+            <ul class="catalog__products products" data-test="catalog">
               <li class="products__item card">
                 <a class="card__link" href="#">
                   <img class="card__img" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="">
@@ -254,7 +254,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <h2 class="visually-hidden">Форма подписки на рассылку</h2>
           <div class="subscribe__wrapper">
             <div class="subscribe__intro intro">
@@ -271,7 +271,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer__wrapper wrapper">
           <ul class="page-footer__list socials">
             <li class="socials__item">

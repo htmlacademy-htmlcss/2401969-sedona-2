@@ -166,7 +166,9 @@ img {
 }
 
 .input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
   font-family: inherit;
+  line-height: 24px;
 }
 
 .input:hover,
@@ -203,25 +205,6 @@ img {
   font-weight: 700;
 }
 
-/*Sticky-footer*/
-
-.page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  inline-size: 1200px;
-  min-block-size: 100%;
-  margin-inline: auto;
-  background-color: #ffffff;
-  box-shadow: 0 0 15px 0 #00000033;
-}
-
-/*Wrapper*/
-
-.wrapper {
-  inline-size: 1060px;
-  margin-inline: auto;
-}
-
 /*Header*/
 
 .page-header {
@@ -246,6 +229,7 @@ img {
 .main-nav__logo-img {
   display: block;
   inline-size: 138px;
+  block-size: 70px;
 }
 
 .main-nav__list {
@@ -270,7 +254,7 @@ img {
 /*Site-nav*/
 
 .site-nav {
-  justify-content: space-around;
+  min-inline-size: 340px;
   gap: 32px;
   padding-inline: 16px;
   font-size: 20px;
@@ -303,6 +287,7 @@ img {
 /*User-nav*/
 
 .user-nav {
+  min-inline-size: 268px;
   margin-inline-start: auto;
 }
 
@@ -850,7 +835,7 @@ img {
 }
 
 .filter__group {
-  inline-size: 150px;
+  min-inline-size: 150px;
   margin: 0;
   padding: 0;
   border: none;
@@ -858,6 +843,7 @@ img {
 
 .filter__title {
   margin-block: 0 32px;
+  padding-inline: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -934,9 +920,9 @@ img {
 }
 
 .range__inputs {
-  inline-size: 288px;
   display: flex;
   justify-content: space-between;
+  gap: 2px;
   margin-block-end: 44px;
 }
 
@@ -956,7 +942,6 @@ img {
 
 .range__scale {
   position: relative;
-  inline-size: 288px;
   block-size: 4px;
   background-color: rgba(255, 255, 255, 0.3);
 }
