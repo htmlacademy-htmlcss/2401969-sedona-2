@@ -25,7 +25,7 @@
                 <a class="site-nav__link" href="#" >О Седоне</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--current" href="#" aria-current="page">Гостиницы</a>
+                <a class="site-nav__link site-nav__link--current" aria-current="page">Гостиницы</a>
               </li>
             </ul>
             <ul class="main-nav__list user-nav">
@@ -124,14 +124,14 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="filter__group filter__buttons">
+              <div class="filter__group filter__buttons">
                 <button class="filter__button button button--second" type="submit">Применить</button>
                 <button class="filter__button button button--trans" type="reset">Сбросить</button>
-              </fieldset>
+              </div>
             </form>
           </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <div class="wrapper">
             <header class="catalog__header sorting">
               <h2 class="sorting__title second-title">Найдено гостиниц:
@@ -156,7 +156,7 @@
                 </a>
               </div>
             </header>
-            <ul class="catalog__products products" data-test="catalog">
+            <ul class="catalog__products products">
               <li class="products__item card">
                 <a class="card__link" href="#">
                   <img class="card__img" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="">
