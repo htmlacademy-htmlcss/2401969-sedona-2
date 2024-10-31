@@ -31,7 +31,8 @@
             </ul>
             <ul class="main-nav__list user-nav">
               <li class="user-nav__item">
-                <a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск.</span></a>
+                <a class="user-nav__link user-nav__link--search" href="#"><span
+                    class="visually-hidden">Поиск.</span></a>
               </li>
               <li class="user-nav__item">
                 <a class="user-nav__link user-nav__link--like" href="#">
@@ -62,7 +63,7 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__description">
-                <p class="advantages__title third-title">Настоящий&nbsp;  городок</p>
+                <p class="advantages__title third-title">Настоящий&nbsp; городок</p>
                 <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages__img" src="images/advantage-photo-1.jpg" width="800" height="385"
@@ -113,7 +114,8 @@
             </li>
             <li class="services__item services__item--gift">
               <p class="services__title third-title">Сувениры</p>
-              <p class="services__description">Не только китайского,&nbsp;<br> но и настоящего местного производства!</p>
+              <p class="services__description">Не только китайского,&nbsp;<br> но и настоящего местного производства!
+              </p>
             </li>
           </ul>
         </section>
@@ -124,7 +126,8 @@
             <p class="intro__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
               в Седоне</p>
           </div>
-          <a class="search__button button button--basic button--big" href="index-modal.html">Поиск гостиницы в Седоне</a>
+          <a class="search__button button button--basic button--big" href="index-modal.html">Поиск гостиницы в
+            Седоне</a>
         </section>
         <section class="subscribe subscribe--bg" data-test="subscribe">
           <h2 class="visually-hidden">Форма подписки на рассылку.</h2>
@@ -171,6 +174,52 @@
         </div>
       </footer>
 
+    </div>
+
+    <div class="modal">
+      <div class="modal__search-form">
+        <a class="modal__close-button" href="index.html">
+          <span class="visually-hidden">Закрыть</span>
+        </a>
+        <section class="modal__content">
+          <h2 class="modal__title second-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal__form search-form" action="https://echo.htmlacademy.ru/" method="post" id="search-form">
+            <div class="search-form__group">
+              <label class="search-form__label" for="search-form-check-in">Дата заезда:</label>
+              <input class="search-form__input search-form__input--date input" type="text" name="search-check-in"
+                id="search-form-check-in" placeholder="27 апреля 2020">
+              <small class="search-form__message search-form__message--error">Мы не можем отправить вас в
+                прошлое.</small>
+            </div>
+            <div class="search-form__group">
+              <label class="search-form__label" for="search-form-check-out">Дата выезда:</label>
+              <input class="search-form__input search-form__input--date input" type="text" name="search-check-out"
+                id="search-form-check-out" placeholder="1 сентября 2023">
+              <small class="search-form__message">На эти даты есть свободные номера. Пока есть.</small>
+            </div>
+            <div class="search-form__group">
+              <label class="search-form__label" for="search-form-adults">Взрослые:</label>
+              <div class="search-form__quantity">
+                <button class="search-form__quantity-button search-form__quantity-button--minus"></button>
+                <input class="search-form__input  search-form__input--family input" type="text" inputmode="numeric"
+                  name="search-adults" id="search-form-adults" placeholder="2">
+                <button class="search-form__quantity-button search-form__quantity-button--plus"></button>
+              </div>
+              <div class="search-form__label search-form__label--kids">
+                <label for="search-form-kids">Дети:</label>
+                <button class="search-form__tooltip"></button>
+              </div>
+              <div class="search-form__quantity">
+                <button class="search-form__quantity-button search-form__quantity-button--minus"></button>
+                <input class="search-form__input search-form__input--family  input" type="text" inputmode="numeric"
+                  name="search-kids" id="search-form-kids" placeholder="2">
+                <button class="search-form__quantity-button search-form__quantity-button--plus"></button>
+              </div>
+            </div>
+            <button class="search-form__button button button--second" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
