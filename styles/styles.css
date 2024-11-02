@@ -364,7 +364,7 @@ img {
 .invite {
   position: relative;
   padding-block: 51px 78px;
-  background-color: #83B3D333;
+  background-color: #68a2ca;
   background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
@@ -730,6 +730,7 @@ img {
   min-inline-size: 115px;
   min-block-size: 33px;
   margin-block: 8px;
+  color: #000000;
 }
 
 .page-footer__copyright::after {
@@ -737,7 +738,7 @@ img {
   content: "";
   inline-size: 115px;
   block-size: 33px;
-  background-color: #000000;
+  background-color: currentColor;
   mask-image: url("../icons/logo-developer.svg");
   mask-repeat: no-repeat;
   mask-position: center;
@@ -1366,6 +1367,7 @@ img {
 
 .search-form__input {
   padding: 12px 20px;
+  border-radius: 4px;
   font-weight: 700;
 }
 
@@ -1373,42 +1375,11 @@ img {
   color: #000000;
 }
 
+/* Search-form__group with *input--date */
+
 .search-form__input--date {
   grid-column: span 3;
 }
-
-.search-form__input--family {
-  inline-size: 58px;
-  padding-block: 14px;
-  text-align: center;
-  line-height: 20px;
-}
-
-/* .search-form__input--family::placeholder {
-  line-height: 20px;
-} */
-
-.search-form__label--kids {
-  position: relative;
-  justify-self: end;
-  margin-inline-end: 48px;
-  padding-inline-end: 36px;
-}
-
-.search-form__tooltip {
-  position: absolute;
-  inline-size: 26px;
-  block-size: 26px;
-  margin-inline-start: 11px;
-  margin-block: -1px;
-  border: none;
-  border-radius: 50%;
-  background-color: #83b3d3;
-  background-image: url("../icons/info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 
 .search-form__message {
   position: absolute;
@@ -1423,30 +1394,141 @@ img {
   color: #ff5757;
 }
 
+/* Search-form__group with *input--family */
+
+.search-form__group--family {
+  grid-column: span 2;
+}
+
 .search-form__quantity {
+  position: relative;
   display: flex;
   align-items: center;
-  padding-inline: 10px;
+  border-radius: 4px;
   background-color: #f2f2f2;
 }
 
 .search-form__quantity-button {
+  position: absolute;
   inline-size: 20px;
   block-size: 20px;
-  padding: 0;
   border: none;
+  background-color: transparent;
+  color: rgba(117, 97, 87, 0.3);
 }
 
-.search-form__quantity-button--minus {
-  background-image: url("../icons/minus.svg");
+.search-form__quantity-button:hover,
+.search-form__quantity-button:focus-visible {
+  color: #000000;
+}
+
+.search-form__quantity-button:focus-visible {
+  outline: 3px #82b3d3 solid;
+  border-radius: 4px;
+}
+
+.search-form__quantity-button:active {
+  opacity: 0.2;
+}
+
+.search-form__quantity-button--less {
+  left: 10px;
+}
+
+.search-form__quantity-button--more {
+  right: 10px;
+}
+
+.search-form__quantity-button::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  inline-size: 20px;
+  block-size: 20px;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.search-form__quantity-button--less::after {
+  mask-image: url("../icons/minus.svg");
+}
+
+.search-form__quantity-button--more::after {
+  mask-image: url("../icons/plus.svg");
+}
+
+.search-form__input--family {
+  inline-size: 100%;
+  padding: 14px 32px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* Search-form__label with tooltip */
+
+.search-form__label:has(.search-form__tooltip) {
+  position: relative;
+  justify-self: end;
+  margin-inline: auto 48px;
+  padding-inline-end: 36px;
+}
+
+.tooltip__toggle {
+  position: absolute;
+  inline-size: 26px;
+  block-size: 26px;
+  margin-inline-start: 11px;
+  margin-block: -1px;
+  border: none;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  background-image: url("../icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.search-form__quantity-button--plus {
-  background-image: url("../icons/plus.svg");
+.tooltip__toggle:focus-visible {
+  outline: none;
+}
+
+.tooltip__text {
+  position: absolute;
+  left: -56px;
+  top: 40px;
+  display: none;
+  inline-size: 256px;
+  block-size: 143px;
+  padding-inline: 22px 23px;
+  padding-block: 20px;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  box-shadow: 0 15px 30px 0 #0000004D;
+}
+
+.tooltip__text::before {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  content: "";
+  inline-size: 19px;
+  block-size: 9px;
+  margin-inline: auto;
+  background-image: url("../icons/corner.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.tooltip__toggle:hover + .tooltip__text,
+.tooltip__toggle:focus-visible + .tooltip__text {
+  display: block;
 }
 
 .search-form__button {
