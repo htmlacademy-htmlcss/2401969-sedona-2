@@ -184,19 +184,20 @@
         <section class="modal__content">
           <h2 class="modal__title second-title">Поиск гостиницы в Седоне</h2>
           <form class="modal__form search-form" action="https://echo.htmlacademy.ru/" method="post" id="search-form">
-            <div class="search-form__group">
-              <label class="search-form__label" for="search-form-check-in">Дата заезда:</label>
+            <label class="search-form__group search-form__group--date" for="search-form-check-in">
+              <span class="search-form__label">Дата заезда:</span>
               <input class="search-form__input search-form__input--date input" type="text" name="search-check-in"
                 id="search-form-check-in" value="27 апреля 2020">
               <small class="search-form__message search-form__message--error">Мы не можем отправить вас в
                 прошлое.</small>
-            </div>
-            <div class="search-form__group">
-              <label class="search-form__label" for="search-form-check-out">Дата выезда:</label>
+            </label>
+            <label class="search-form__group search-form__group--date">
+              <span class="search-form__label">Дата выезда:</span>
               <input class="search-form__input search-form__input--date input" type="text" name="search-check-out"
                 id="search-form-check-out" value="1 сентября 2023">
               <small class="search-form__message">На эти даты есть свободные номера. Пока есть.</small>
-            </div>
+            </label>
+
             <div class="search-form__group search-form__group--family">
               <label class="search-form__label" for="search-form-adults">Взрослые:</label>
               <div class="search-form__quantity">
@@ -214,7 +215,8 @@
                     <span class="visually-hidden">Показать дополнительную информацию</span>
                   </button>
                   <span class="tooltip__text">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
                   </span>
                 </span>
               </div>
