@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -150,17 +151,17 @@
         <div class="page-footer__wrapper wrapper">
           <ul class="page-footer__list socials">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в ВКонтакте.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--tg" href="#">
+              <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Мы в Телеграме.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--yt" href="#">
+              <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Ютубе.</span>
               </a>
             </li>
@@ -168,7 +169,7 @@
           <address class="page-footer__address address">
             <a class="address__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
-          <a class="page-footer__copyright" href="#">
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Логотип HTML Academy.</span>
           </a>
         </div>
@@ -179,7 +180,7 @@
     <div class="modal">
       <div class="modal__search-form">
         <a class="modal__close-button" href="index.html">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </a>
         <section class="modal__content">
           <h2 class="modal__title second-title">Поиск гостиницы в Седоне</h2>
@@ -201,30 +202,38 @@
             <div class="search-form__group search-form__group--family">
               <label class="search-form__label" for="search-form-adults">Взрослые:</label>
               <div class="search-form__quantity">
-                <button class="search-form__quantity-button search-form__quantity-button--less" type="button"></button>
+                <button class="search-form__quantity-button search-form__quantity-button--less" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
                 <input class="search-form__input  search-form__input--family input" type="text" inputmode="numeric"
                   name="search-adults" id="search-form-adults" value="2">
-                <button class="search-form__quantity-button search-form__quantity-button--more" type="button"></button>
+                <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
               </div>
             </div>
             <div class="search-form__group search-form__group--family">
               <div class="search-form__label">
                 <label for="search-form-kids">Дети:</label>
                 <span class="search-form__tooltip tooltip">
-                  <button class="tooltip__toggle" type="button">
-                    <span class="visually-hidden">Показать дополнительную информацию</span>
+                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Показать дополнительную информацию.</span>
                   </button>
-                  <span class="tooltip__text">
+                  <span class="tooltip__text" role="tooltip" id="tooltip-label-date">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                     размещаются бесплатно.
                   </span>
                 </span>
               </div>
               <div class="search-form__quantity">
-                <button class="search-form__quantity-button search-form__quantity-button--less" type="button"></button>
+                <button class="search-form__quantity-button search-form__quantity-button--less" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
                 <input class="search-form__input search-form__input--family  input" type="text" inputmode="numeric"
                   name="search-kids" id="search-form-kids" value="2">
-                <button class="search-form__quantity-button search-form__quantity-button--more" type="button"></button>
+                <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
               </div>
             </div>
             <button class="search-form__button button button--second" type="submit">Найти</button>

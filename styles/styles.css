@@ -167,6 +167,11 @@ img {
   outline-offset: -3px;
 }
 
+.input:disabled,
+.input:disabled:hover {
+  opacity: 0.1;
+}
+
 .input::placeholder {
   color: rgba(0, 0, 0, 0.6);
   font-family: inherit;
@@ -926,6 +931,10 @@ img {
   opacity: 0.3;
 }
 
+.control__input:disabled + .control__label {
+  opacity: 0.1;
+}
+
 /*Range*/
 
 .range {
@@ -1407,6 +1416,10 @@ img {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.search-form__group--date:has(.input:disabled) {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 .search-form__group--date::after {
   position: absolute;
   top: 14px;
@@ -1516,17 +1529,22 @@ img {
 
 .search-form__label:has(.search-form__tooltip) {
   position: relative;
-  justify-self: end;
-  margin-inline: auto 48px;
-  padding-inline-end: 36px;
+  margin-inline: auto 47px;
+  padding-inline-end: 37px;
 }
 
-.tooltip__toggle {
+.tooltip {
   position: absolute;
   inline-size: 26px;
   block-size: 26px;
   margin-inline-start: 11px;
-  margin-block: -1px;
+}
+
+.tooltip__toggle {
+  position: absolute;
+  top: -1px;
+  inline-size: 26px;
+  block-size: 26px;
   border: none;
   border-radius: 50%;
   background-color: #83b3d3;
