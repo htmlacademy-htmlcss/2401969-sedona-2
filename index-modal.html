@@ -188,14 +188,14 @@
             <label class="search-form__group search-form__group--date" for="search-form-check-in">
               <span class="search-form__label">Дата заезда:</span>
               <input class="search-form__input search-form__input--date input" type="text" name="search-check-in"
-                id="search-form-check-in" value="27 апреля 2020">
+                id="search-form-check-in" value="27 апреля 2020" required>
               <small class="search-form__message search-form__message--error">Мы не можем отправить вас в
                 прошлое.</small>
             </label>
             <label class="search-form__group search-form__group--date">
               <span class="search-form__label">Дата выезда:</span>
               <input class="search-form__input search-form__input--date input" type="text" name="search-check-out"
-                id="search-form-check-out" value="1 сентября 2023">
+                id="search-form-check-out" value="1 сентября 2023" required>
               <small class="search-form__message">На эти даты есть свободные номера. Пока есть.</small>
             </label>
 
@@ -206,7 +206,7 @@
                   <span class="visually-hidden">Уменьшить.</span>
                 </button>
                 <input class="search-form__input  search-form__input--family input" type="text" inputmode="numeric"
-                  name="search-adults" id="search-form-adults" value="2">
+                  name="search-adults" id="search-form-adults" value="2" required>
                 <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
                   <span class="visually-hidden">Увеличить.</span>
                 </button>
@@ -230,7 +230,7 @@
                   <span class="visually-hidden">Уменьшить.</span>
                 </button>
                 <input class="search-form__input search-form__input--family  input" type="text" inputmode="numeric"
-                  name="search-kids" id="search-form-kids" value="2">
+                  name="search-kids" id="search-form-kids" value="2" required>
                 <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
                   <span class="visually-hidden">Увеличить.</span>
                 </button>

@@ -967,6 +967,11 @@ img {
   appearance: none;
 }
 
+.range__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+
 .range__input--min {
   border-radius: 4px 0 0 4px;
 }
@@ -1074,6 +1079,7 @@ img {
   background-position: right 20px center;
   color: inherit;
   appearance: none;
+  cursor: pointer;
 }
 
 .sorting__select:hover,
@@ -1367,6 +1373,7 @@ img {
 
 .modal__title {
   margin-block: 0 64px;
+  margin-inline-end: 52px;
 }
 
 .search-form {
@@ -1559,13 +1566,13 @@ img {
 
 .tooltip__text {
   position: absolute;
-  left: -56px;
+  left: -115px;
   top: 40px;
   display: none;
   inline-size: 256px;
   block-size: 143px;
   padding-inline: 22px 23px;
-  padding-block: 20px;
+  padding-block: 20px 23px;
   border-radius: 10px;
   background-color: #333333;
   color: #ffffff;
@@ -1591,7 +1598,8 @@ img {
 }
 
 .tooltip__toggle:hover + .tooltip__text,
-.tooltip__toggle:focus-visible + .tooltip__text {
+.tooltip__toggle:focus-visible + .tooltip__text,
+.tooltip__toggle:hover + .tooltip__text {
   display: block;
 }
 
