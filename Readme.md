@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Виктор Волошенко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2401969).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Страница проекта: [Sedona-Kontur](https://vikkont79.github.io/2401969-sedona-2/).
 
 ---
 

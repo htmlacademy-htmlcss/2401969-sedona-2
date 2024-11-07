@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -43,7 +41,7 @@
                 </a>
               </li>
               <li class="user-nav__item">
-                <a class="user-nav__button button button--basic" href="#">Хочу сюда!</a>
+                <a class="user-nav__button button button--basic" href="catalog.html">Хочу сюда!</a>
               </li>
             </ul>
           </nav>
@@ -152,20 +150,17 @@
         <div class="page-footer__wrapper wrapper">
           <ul class="page-footer__list socials">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank"
-                rel="noreferrer noopener">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в ВКонтакте.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy" target="_blank"
-                rel="noreferrer noopener">
+              <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в Телеграме.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru"
-                target="_blank" rel="noreferrer noopener">
+              <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в Ютубе.</span>
               </a>
             </li>
@@ -179,6 +174,74 @@
         </div>
       </footer>
 
+    </div>
+
+    <div class="modal">
+      <div class="modal__search-form">
+        <a class="modal__close-button" href="index.html">
+          <span class="visually-hidden">Закрыть.</span>
+        </a>
+        <section class="modal__content">
+          <h2 class="modal__title second-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal__form search-form" action="https://echo.htmlacademy.ru/" method="post" id="search-form">
+
+            <label class="search-form__group search-form__group--date" for="search-form-check-in">
+              <span class="search-form__label">Дата заезда:</span>
+              <input class="search-form__input search-form__input--date input" type="text" name="search-check-in"
+                id="search-form-check-in" value="27 апреля 2020" required>
+              <small class="search-form__message search-form__message--error">Мы не можем отправить вас в
+                прошлое.</small>
+            </label>
+
+            <label class="search-form__group search-form__group--date">
+              <span class="search-form__label">Дата выезда:</span>
+              <input class="search-form__input search-form__input--date input" type="text" name="search-check-out"
+                id="search-form-check-out" value="1 сентября 2023" required>
+              <small class="search-form__message">На эти даты есть свободные номера. Пока есть.</small>
+            </label>
+
+            <div class="search-form__group search-form__group--family">
+              <label class="search-form__label" for="search-form-adults">Взрослые:</label>
+              <div class="search-form__quantity">
+                <button class="search-form__quantity-button search-form__quantity-button--less" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+                <input class="search-form__input  search-form__input--family input" type="text" inputmode="numeric"
+                  name="search-adults" id="search-form-adults" value="2" required>
+                <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-form__group search-form__group--family">
+              <div class="search-form__label">
+                <label for="search-form-kids">Дети:</label>
+                <span class="search-form__tooltip tooltip">
+                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Показать дополнительную информацию.</span>
+                  </button>
+                  <span class="tooltip__text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </span>
+                </span>
+              </div>
+              <div class="search-form__quantity">
+                <button class="search-form__quantity-button search-form__quantity-button--less" type="button">
+                  <span class="visually-hidden">Уменьшить.</span>
+                </button>
+                <input class="search-form__input search-form__input--family  input" type="text" inputmode="numeric"
+                  name="search-kids" id="search-form-kids" value="2" required>
+                <button class="search-form__quantity-button search-form__quantity-button--more" type="button">
+                  <span class="visually-hidden">Увеличить.</span>
+                </button>
+              </div>
+            </div>
+            <button class="search-form__button button button--second" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
