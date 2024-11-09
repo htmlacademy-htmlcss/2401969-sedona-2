@@ -218,6 +218,7 @@ body {
 
 .main-nav__logo {
   display: block;
+  min-inline-size: 140px;
   margin-block-end: -6px;
 }
 
@@ -448,7 +449,6 @@ body {
 
 .advantages__title {
   margin-block: 0 30px;
-  color: inherit;
 }
 
 .advantages__title::after {
@@ -474,6 +474,10 @@ body {
   grid-template-columns: subgrid;
   background-color: #82b3d3;
   color: #ffffff;
+}
+
+.advantages__item:has(.advantages__img) .advantages__title {
+  color: inherit;
 }
 
 .advantages__item:has(.advantages__img) .advantages__description {
@@ -1286,14 +1290,8 @@ body {
   align-content: center;
   min-inline-size: 60px;
   min-block-size: 60px;
-  border-radius: 4px;
-  background-color: #82b3d3;
-  color: #ffffff;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
 }
 
 .pagination__link:hover {
@@ -1424,7 +1422,7 @@ body {
 /* Search-form__group with *input--date */
 
 .search-form__group--date {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form__group--date:hover {
@@ -1465,7 +1463,7 @@ body {
 .search-form__message {
   position: absolute;
   left: 20px;
-  top: 52px;
+  top: 100%;
   grid-column: 2/-1;
   color: #000000;
   font-size: 16px;
