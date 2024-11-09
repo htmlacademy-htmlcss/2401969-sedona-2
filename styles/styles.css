@@ -59,7 +59,7 @@ body {
   min-block-size: 100%;
   margin-inline: auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px 0 #00000033;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*Wrapper*/
@@ -186,7 +186,8 @@ body {
   font-weight: 700;
 }
 
-:is(.second-title, .third-title) {
+.second-title,
+.third-title {
   color: #000000;
   text-transform: uppercase;
 }
@@ -220,6 +221,19 @@ body {
   margin-block-end: -6px;
 }
 
+.main-nav__logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__logo:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #83b3d3;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
+}
+
 .main-nav__logo-img {
   display: block;
   inline-size: 140px;
@@ -230,7 +244,8 @@ body {
   margin: 0;
 }
 
-:is(.site-nav, .user-nav) {
+.site-nav,
+.user-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -238,7 +253,8 @@ body {
   list-style-type: none;
 }
 
-:is(.site-nav__link, .user-nav__link) {
+.site-nav__link,
+.user-nav__link {
   display: block;
   position: relative;
   color: inherit;
@@ -361,7 +377,7 @@ body {
 .invite {
   position: relative;
   padding-block: 51px 78px;
-  background-color: #68a2ca;
+  background-color: #333333;
   background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
@@ -417,12 +433,12 @@ body {
 
 /*Advantages item*/
 
-.advantages__item {
+.advantages__item:nth-of-type(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages__item:nth-of-type(even) {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages__description {
@@ -431,16 +447,15 @@ body {
 }
 
 .advantages__title {
-  position: relative;
-  margin-block: 0 62px;
-  padding-inline: 29px;
+  margin-block: 0 30px;
+  color: inherit;
 }
 
 .advantages__title::after {
-  position: absolute;
   content: "";
-  bottom: -31px;
-  left: 85px;
+  display: block;
+  margin-inline: auto;
+  margin-block-start: 30px;
   inline-size: 60px;
   block-size: 2px;
   background-color: currentColor;
@@ -463,14 +478,6 @@ body {
 
 .advantages__item:has(.advantages__img) .advantages__description {
   padding-block: 103px 101px;
-}
-
-.advantages__item:has(.advantages__img) .advantages__title {
-  color: #ffffff;
-}
-
-.advantages__item:has(.advantages__img) .advantages__title::after {
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages__img {
@@ -605,8 +612,6 @@ body {
 .subscribe__button {
   min-inline-size: 232px;
   border-radius: 0 4px 4px 0;
-  color: #ffffff;
-
 }
 
 /*Footer*/
@@ -757,7 +762,7 @@ body {
 
 .catalog-header {
   padding-block: 35px 70px;
-  background-color: #68a2ca;
+  background-color: #615048;
   background-image: url("../images/inner-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -803,7 +808,8 @@ body {
 }
 
 .breadcrumbs__link:focus-visible {
-  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  outline: 2px solid #83b3d3;
 }
 
 .breadcrumbs__link:active {
@@ -909,10 +915,15 @@ body {
   border-radius: 20px;
 }
 
-.control__input[type="radio"]:checked + .control__label::before {
-  background-image: url("../icons/radio.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.control__input[type="radio"]:checked + .control__label::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 5px;
+  inline-size: 10px;
+  block-size: 10px;
+  border-radius: 50%;
+  background-color: #3f5e72;
 }
 
 .control__label:hover {
@@ -1010,7 +1021,7 @@ body {
 }
 
 .range__toggle:active {
-  outline-width: 2px;
+  outline: 2px solid #83b3d3;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -1183,10 +1194,18 @@ body {
   text-decoration: none;
 }
 
+.card__link:hover {
+  opacity: 0.6;
+}
+
 .card__link:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
   outline-offset: 5px;
+}
+
+.card__link:active {
+  opacity: 0.3;
 }
 
 .card__img {
@@ -1582,7 +1601,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  box-shadow: 0 15px 30px 0 #0000004D;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tooltip__text::before {
